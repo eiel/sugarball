@@ -1,0 +1,6 @@
+[package]
+name = "sugarball"
+version = "0.1.0"
+authors = ["Tomohiko Himura <eiel.hal@gmail.com>"]
+
+[dependencies]
