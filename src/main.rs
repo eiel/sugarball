@@ -6,13 +6,13 @@ fn main() {
     println!("{:?}", c);
 }
 
-fn get_installed_info_command() -> Box<Command> {
+fn get_installed_info_command() -> Command {
     let mut cmd = Command::new("brew");
     cmd
         .arg("info")
         .arg("--json=v1")
         .arg("--installed");
-    Box::new(cmd)
+    cmd
 }
 
 fn installed_list() -> String {
